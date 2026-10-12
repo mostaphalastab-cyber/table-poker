@@ -1,5 +1,5 @@
-// Table de décision, version 20261012080440 : le réseau d'abord (la nouvelle version dès qu'il y en a), sinon la copie gardée.
-const CACHE = "table-20261012080440";
+// Table de décision, version 20261012080848 : le réseau d'abord (la nouvelle version dès qu'il y en a), sinon la copie gardée.
+const CACHE = "table-20261012080848";
 // vosk.js (le moteur de la dictée sans réseau) est gardé aussi ; son modèle, lui, reste sur l'appareil à part (IndexedDB).
 const FICHIERS = ["./", "./index.html", "./manifest.webmanifest", "./icone-192.png", "./icone-512.png", "./vosk.js"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FICHIERS))); self.skipWaiting(); });
