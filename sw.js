@@ -1,5 +1,5 @@
-// Table de décision, version 20261012044652 : le réseau d'abord (la nouvelle version dès qu'il y en a), sinon la copie gardée.
-const CACHE = "table-20261012044652";
+// Table de décision, version 20261012072857 : le réseau d'abord (la nouvelle version dès qu'il y en a), sinon la copie gardée.
+const CACHE = "table-20261012072857";
 const FICHIERS = ["./", "./index.html", "./manifest.webmanifest", "./icone-192.png", "./icone-512.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FICHIERS))); self.skipWaiting(); });
 // Seules ses propres anciennes copies s'en vont : l'appli du rallye vit à la même adresse (mostaphalastab-cyber.github.io)
